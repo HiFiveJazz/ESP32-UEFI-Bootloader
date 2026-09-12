@@ -1,0 +1,14 @@
+If:
+  PathMatch: bootloader_components/.*
+
+CompileFlags:
+  CompilationDatabase: build.clang/bootloader
+  Remove:
+    - -fno-shrink-wrap
+
+---
+If:
+  PathMatch: main/.*
+
+CompileFlags:
+  CompilationDatabase: build.clang
